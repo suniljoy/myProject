@@ -8,8 +8,8 @@ class Employee
 public:
     Employee(string id, string name, string address, string contact_number);
     ~Employee();
-    void add_details(string id, string name, string address, string contact_number);
-    void delete_details(string id);
+    bool add_details(string id, string name, string address, string contact_number);
+    bool delete_details(string id);
     bool modify_details(string id, string name, string address, string contact_number);
 private:
     string id;
